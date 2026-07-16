@@ -73,7 +73,7 @@
 
       /* ===== TYPOGRAPHY ===== */
       h1.title {
-        font-size: clamp(1.5rem, 6vw, 2.2rem);
+        font-size: clamp(1.9rem, 7.5vw, 2.8rem);
         font-weight: 600;
         color: #fff;
         line-height: 1.35;
@@ -83,7 +83,7 @@
       }
       .subtitle {
         font-family: "Itim", cursive;
-        font-size: 1rem;
+        font-size: 1.2rem;
         color: #d8b4fe;
         max-width: 300px;
       }
@@ -190,7 +190,9 @@
         transform: rotate(var(--r));
         transition: transform 0.25s;
         cursor: pointer;
-        background: #2a1040;
+        background: rgba(42, 16, 64, 0.55);
+        backdrop-filter: blur(12px);
+        -webkit-backdrop-filter: blur(12px);
       }
       .photo-card:nth-child(1) {
         --r: -1.5deg;
@@ -344,7 +346,9 @@
       }
       .speech-bubble {
         position: relative;
-        background: #2a1040;
+        background: rgba(42, 16, 64, 0.55);
+        backdrop-filter: blur(12px);
+        -webkit-backdrop-filter: blur(12px);
         border: 2px solid #7c3aed;
         border-radius: 18px;
         padding: 1rem 1.2rem;
@@ -376,7 +380,7 @@
       }
       .bubble-text {
         font-family: "Itim", cursive;
-        font-size: 1.05rem;
+        font-size: 1.25rem;
         color: #f3e8ff;
         line-height: 1.6;
         transition: opacity 0.3s;
@@ -398,11 +402,13 @@
       }
       .final-msg {
         font-family: "Itim", cursive;
-        font-size: 1.05rem;
+        font-size: 1.25rem;
         color: #f3e8ff;
         max-width: 300px;
         line-height: 2;
-        background: rgba(124, 58, 237, 0.2);
+        background: rgba(124, 58, 237, 0.15);
+        backdrop-filter: blur(12px);
+        -webkit-backdrop-filter: blur(12px);
         border: 1px solid #7c3aed;
         border-radius: 20px;
         padding: 1.2rem 1.4rem;
@@ -434,7 +440,7 @@
         border: none;
         border-radius: 999px;
         font-family: "Mitr", sans-serif;
-        font-size: 1rem;
+        font-size: 1.15rem;
         font-weight: 500;
         cursor: pointer;
         box-shadow: 0 4px 18px rgba(124, 58, 237, 0.5);
@@ -527,7 +533,7 @@
       /* ===== HINTS ===== */
       .tap-hint {
         font-family: "Itim", cursive;
-        font-size: 0.95rem;
+        font-size: 1.1rem;
         color: #a78bfa;
         animation: bounce 1.4s infinite;
       }
@@ -542,7 +548,7 @@
       }
       .scroll-hint {
         font-family: "Itim", cursive;
-        font-size: 0.85rem;
+        font-size: 1rem;
         color: #a78bfa;
         animation: bounce 1.4s infinite;
       }
@@ -616,7 +622,11 @@
       <div class="gallery-scroll">
         <div class="photo-card" onclick="spawnHearts(event)">
           <img src="images/kimbie.jpg" alt="คิมบี้" />
-          <div class="photo-sticker">🌸</div>
+          <div class="photo-sticker">❤️</div>
+        </div>
+        <div class="photo-card" onclick="spawnHearts(event)">
+          <img src="images/photo2.jpg" alt="คิมบี้" />
+          <div class="photo-sticker">🫶</div>
         </div>
         <div class="photo-card" onclick="spawnHearts(event)">
           <img
@@ -653,6 +663,10 @@
         <div class="photo-card" onclick="spawnHearts(event)">
           <img src="images/jk2.jpg" alt="คิมบี้" />
           <div class="photo-sticker">🌹</div>
+        </div>
+        <div class="photo-card" onclick="spawnHearts(event)">
+          <img src="images/photo3.HEIC" alt="คิมบี้" />
+          <div class="photo-sticker">💖</div>
         </div>
       </div>
       <p class="scroll-hint">← เลื่อนซ้ายขวา →</p>
